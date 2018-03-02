@@ -1,0 +1,2 @@
+# samplegenerator
+Shinyapp hosted at https://wferreira.shinyapps.io/randomsample/ that draws a random sample of participants in an event / activity based on their order on an attendance list. This app generates a reproducible random sample list of numbers. You can identify participants by matching a numbered attendance list of participants to the column 'Participant' below. You can invite participants to answer a feedback survey individually or in groups. Samples are reproducible with the function 'set.seed(44343)' using R. 
