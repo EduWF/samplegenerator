@@ -1,0 +1,12 @@
+name: samplegenerator
+title: samplegenerator
+username:
+account: wferreira
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 291577
+bundleId: 1248675
+url: https://wferreira.shinyapps.io/samplegenerator/
+when: 1519983639.19422
+asMultiple: FALSE
+asStatic: FALSE
