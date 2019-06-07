@@ -26,8 +26,8 @@ ui <- fluidPage(
            "You can invite participants to answer a feedback survey individually or in groups.",
            "Samples are reproducible with the function 'set.seed(44343)' using R.",
            "Learn more about reproducible sampling at:", 
-           a("https://wferreira.eu", 
-                                 href="https://wferreira.eu/website/update/2018/03/02/Post-on-app-randomsample.html", target="_blank")
+           a("https://movimentar.eu", 
+                                 href="https://movimentar.eu/website/update/2018/03/02/Post-on-app-randomsample.html", target="_blank")
            ),
   
   # Sidebar with a slider input for number of participants and %
@@ -58,7 +58,7 @@ ui <- fluidPage(
       wellPanel(
         helpText("Author:", 
                  a("Dr. rer. pol. Eduardo W. Ferreira (PhD)", 
-                   href="https://wferreira.eu/about/eduardo/", target="_blank"),
+                   href="https://movimentar.eu/about/eduardo/", target="_blank"),
                  "- Source code available for download at ",    
           a("Github.",     
             href="https://github.com/EduWF/samplegenerator", target="_blank")
