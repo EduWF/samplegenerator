@@ -27,7 +27,7 @@ ui <- fluidPage(
            "Samples are reproducible with the function 'set.seed(44343)' using R.",
            "Learn more about reproducible sampling at:", 
            a("https://movimentar.eu", 
-                                 href="https://movimentar.eu/website/update/2018/03/02/Post-on-app-randomsample.html", target="_blank")
+                                 href="https://movimentar.eu/reproducible-random-sample-generator-in-shinyapps-for-improved-data-and-learning/", target="_blank")
            ),
   
   # Sidebar with a slider input for number of participants and %
