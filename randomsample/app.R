@@ -9,11 +9,11 @@
 library(shiny)
 library(dplyr)
 library(DT)
-library(xlsx)
+library(writexl)
 
 # Define UI for application 
 ui <- fluidPage(
-  
+
   # Application title
   titlePanel("Reproducible random sample generator"),
   
@@ -61,9 +61,9 @@ ui <- fluidPage(
                    href="https://movimentar.eu/about/eduardo/", target="_blank"),
                  "- Source code available for download at ",    
           a("Github.",     
-            href="https://github.com/EduWF/samplegenerator", target="_blank")
+            href="https://github.com/movimentar/samplegenerator", target="_blank")
         )
-      )
+      ) 
     )
   )
 )
@@ -71,7 +71,6 @@ ui <- fluidPage(
 ###################################################
 # Define server 
 server <- function(input, output) {
-  
   
   output$sample <- renderDataTable({
     set.seed(44343)
@@ -88,7 +87,7 @@ server <- function(input, output) {
     filename = function(){paste("Sample ", Sys.Date(),".xlsx")}, 
     content = function(fname){
       set.seed(44343)
-      write.xlsx(
+      writexl::write_xlsx(
         tbl_df(sample(1:input$participants, 
                       size = c(input$participants * (input$percentage / 100))
         )
